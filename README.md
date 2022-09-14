@@ -1,3 +1,3 @@
-### My nvChad config
+### My NvChad custom folder
 
-Very new
+Very basic, more to come
