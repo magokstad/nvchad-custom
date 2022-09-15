@@ -14,7 +14,25 @@ return {
 
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
-    override_options = overrides.treesitter,
+    override_options = {
+      highlight = {
+        additional_vim_regex_highlighting = true,
+      },
+      rainbow = {
+        disable = {},
+        enable = true,
+        extended_mode = true,
+        max_file_lines = nil,
+        colors = {
+          "#DC2626",
+          "#DB9F24",
+          "#2563EB",
+          "#10A971",
+          "#7C3AED",
+          "#BB00BB",
+        }
+      }
+    },
   },
 
   ["williamboman/mason.nvim"] = {
@@ -23,6 +41,14 @@ return {
   ["kyazdani42/nvim-tree.lua"] = {
     override_options = overrides.nvimtree,
   },
+
+
+  -- ["nvim-treesitter/nvim-treesitter"] = {
+  --   config = function ()
+  --     require("nvim-treesitter")
+  --   end
+  --     rainbow = {enable = true}
+  -- },
 
   ["folke/which-key.nvim"] = {
     disable = false
@@ -62,6 +88,9 @@ return {
           test = {
             -- "Identifier",
             "#FF00FF" }
+        },
+        keywords = {
+          TEST = { icon = " ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
         },
       }
     end
