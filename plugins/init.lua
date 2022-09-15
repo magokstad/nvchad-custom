@@ -4,6 +4,15 @@ return {
 
   ["goolord/alpha-nvim"] = { disable = false }, -- enables dashboard
 
+
+  ["NvChad/ui"] = {
+    override_options = {
+      statusline = {
+        separator_style = "block",
+      },
+    },
+  },
+
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
     config = function()
@@ -39,7 +48,13 @@ return {
     override_options = overrides.mason,
   },
   ["kyazdani42/nvim-tree.lua"] = {
-    override_options = overrides.nvimtree,
+    override_options = {
+      actions = {
+        open_file = {
+          quit_on_open = true,
+        },
+      },
+    },
   },
 
 

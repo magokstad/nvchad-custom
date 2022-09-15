@@ -1,5 +1,3 @@
-vim.g.rustfmt_autosave = 1
-
 local autocmd = vim.api.nvim_create_autocmd
 
 -- Auto resize panes when resizing nvim window
