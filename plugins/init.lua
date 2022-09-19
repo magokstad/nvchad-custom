@@ -5,6 +5,8 @@ local rngsplash = require "custom.plugins.splash-ascii-rng"
 
 return {
 
+  ["wakatime/vim-wakatime"] = {},
+
   ["goolord/alpha-nvim"] = {
     disable = false,
     override_options = {
