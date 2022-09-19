@@ -68,6 +68,11 @@ return {
   },
 
 
+  ["lervag/vimtex"] = {
+
+  },
+
+
   -- ["nvim-treesitter/nvim-treesitter"] = {
   --   config = function ()
   --     require("nvim-treesitter")

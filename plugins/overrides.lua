@@ -8,6 +8,7 @@ M.treesitter = {
     "css",
     "c",
     "rust",
+    "latex",
   },
 }
 
@@ -24,7 +25,13 @@ M.mason = {
     "deno",
 
     -- rust
-    "rust-analyzer"
+    "rust-analyzer",
+
+    -- latex
+    "texlab",
+    --"ltex-ls"
+    -- "vale",
+    --"tectonic"
   },
 }
 

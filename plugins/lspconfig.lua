@@ -3,7 +3,17 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "tsserver", "clangd", "rust_analyzer"}
+local servers = {
+  "html",
+  "cssls",
+  "tsserver",
+  "clangd",
+  "rust_analyzer",
+  "texlab",
+  -- "ltex",
+  --"vale",
+  --"tectonic",
+}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
