@@ -11,6 +11,13 @@ return {
 
   ["gpanders/editorconfig.nvim"] = {},
 
+  ["windwp/nvim-autopairs"] = {
+    disable = false,
+    override_options = {
+      enable_check_bracket_line = true,
+    },
+  },
+
   ["goolord/alpha-nvim"] = {
     disable = false,
     override_options = {
