@@ -9,7 +9,28 @@ M.treesitter = {
     "c",
     "rust",
     "latex",
+    "java",
+    "fennel",
   },
+
+  highlight = {
+    additional_vim_regex_highlighting = true,
+  },
+
+  rainbow = {
+    disable = {},
+    enable = true,
+    extended_mode = true,
+    max_file_lines = nil,
+    colors = {
+      "#DC2626",
+      "#DB9F24",
+      "#2563EB",
+      "#10A971",
+      "#7C3AED",
+      "#BB00BB",
+    }
+  }
 }
 
 M.mason = {
@@ -23,6 +44,7 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
+    "jdtls",
 
     -- rust
     "rust-analyzer",
@@ -37,6 +59,13 @@ M.mason = {
 
 -- git support in nvimtree
 M.nvimtree = {
+
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
+
   git = {
     enable = true,
   },

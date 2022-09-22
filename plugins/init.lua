@@ -7,6 +7,10 @@ return {
 
   ["wakatime/vim-wakatime"] = {},
 
+  -- ["rktjmp/hotpot.nvim"] = {},
+
+  ["gpanders/editorconfig.nvim"] = {},
+
   ["goolord/alpha-nvim"] = {
     disable = false,
     override_options = {
@@ -35,44 +39,18 @@ return {
 
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
-    override_options = {
-      highlight = {
-        additional_vim_regex_highlighting = true,
-      },
-      rainbow = {
-        disable = {},
-        enable = true,
-        extended_mode = true,
-        max_file_lines = nil,
-        colors = {
-          "#DC2626",
-          "#DB9F24",
-          "#2563EB",
-          "#10A971",
-          "#7C3AED",
-          "#BB00BB",
-        }
-      }
-    },
+    override_options = overrides.treesitter,
   },
 
   ["williamboman/mason.nvim"] = {
     override_options = overrides.mason,
   },
   ["kyazdani42/nvim-tree.lua"] = {
-    override_options = {
-      actions = {
-        open_file = {
-          quit_on_open = true,
-        },
-      },
-    },
+    override_options = overrides.nvimtree,
   },
 
 
-  ["lervag/vimtex"] = {
-
-  },
+  ["lervag/vimtex"] = {},
 
 
   -- ["nvim-treesitter/nvim-treesitter"] = {

@@ -9,6 +9,7 @@ local servers = {
   "tsserver",
   "clangd",
   "rust_analyzer",
+  "jdtls",
   "texlab",
   -- "ltex",
   --"vale",
