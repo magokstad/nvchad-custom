@@ -10,6 +10,7 @@ local servers = {
   "clangd",
   "rust_analyzer",
   "jdtls",
+  "jedi_language_server",
   "texlab",
   -- "ltex",
   --"vale",
