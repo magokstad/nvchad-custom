@@ -7,11 +7,12 @@ M.treesitter = {
     "html",
     "css",
     "c",
+    "vue",
     "rust",
     "latex",
     "java",
     "fennel",
-    "python"
+    "python",
   },
 
   highlight = {
@@ -45,6 +46,10 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
+    "vetur-vls",
+    "tailwindcss-language-server",
+
+
     "jdtls",
 
     -- rust
