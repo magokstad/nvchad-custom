@@ -11,7 +11,8 @@ M.treesitter = {
     "latex",
     "java",
     "fennel",
-    "python"
+    "python",
+    "clojure",
   },
 
   highlight = {
@@ -56,9 +57,9 @@ M.mason = {
     -- python
     "jedi_language_server",
 
-    --"ltex-ls"
-    -- "vale",
-    --"tectonic"
+    -- clojure
+    "clojure-lsp"
+
   },
 }
 

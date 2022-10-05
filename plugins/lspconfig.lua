@@ -12,9 +12,7 @@ local servers = {
   "jdtls",
   "jedi_language_server",
   "texlab",
-  -- "ltex",
-  --"vale",
-  --"tectonic",
+  "clojure_lsp"
 }
 
 for _, lsp in ipairs(servers) do
