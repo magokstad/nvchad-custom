@@ -11,6 +11,32 @@ return {
 
   ["gpanders/editorconfig.nvim"] = {},
 
+
+  ["nvim-neorg/neorg"] = {
+    config = function()
+      require("neorg").setup {
+        load = {
+          ["core.defaults"] = {},
+          ["core.norg.dirman"] = {
+            config = {
+              workspaces = {
+                work = "~/notes/work",
+                home = "~/notes/home",
+              }
+            }
+          },
+          ["core.export"] = {},
+          ["core.norg.completion"] = {
+            config = {
+              engine = "nvim-cmp"
+            }
+          }
+        }
+      }
+    end,
+    requires = "nvim-lua/plenary.nvim"
+  },
+
   ["windwp/nvim-autopairs"] = {
     disable = false,
     override_options = {
