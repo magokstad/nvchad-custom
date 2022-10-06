@@ -5,9 +5,23 @@ local rngsplash = require "custom.plugins.splash-ascii-rng"
 
 return {
 
+  -- TODO: Move overrides to overrides
+  -- TODO: checkout neogit
+
   ["wakatime/vim-wakatime"] = {},
 
   -- ["rktjmp/hotpot.nvim"] = {},
+
+  ["nvim-lua/plenary.nvim"] = {},
+
+  ["jiaoshijie/undotree"] = {
+    config = function()
+      require('undotree').setup()
+    end,
+    requires = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
 
   ["gpanders/editorconfig.nvim"] = {},
 

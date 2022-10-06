@@ -17,6 +17,8 @@ M.general = {
     [";"] = { ":", "command mode", opts = { nowait = true } },
     ["<leader>up"] = {"<cmd> :PackerSync <CR>", "sync packer", opts={}},
     ["<leader>uf"] = {"<cmd> :!cargo-fmt <CR>", "format rust", opts={}},
+    ["<leader>ut"] = {"<cmd> :lua require('undotree').toggle() <CR>", "toggle undotree", opts={noremap = true, silent = true}},
+-- vim.keymap.set('n', '<leader>u', require('undotree').toggle, { noremap = true, silent = true })
 
     -- toggle in normal mode
     ["<C-i>"] = {
