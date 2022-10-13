@@ -14,7 +14,8 @@ local servers = {
   "jdtls",
   "jedi_language_server",
   "texlab",
-  "clojure_lsp"
+  "clojure_lsp",
+  "crystalline"
 }
 
 for _, lsp in ipairs(servers) do

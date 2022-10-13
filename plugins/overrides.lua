@@ -63,7 +63,10 @@ M.mason = {
     "jedi_language_server",
 
     -- clojure
-    "clojure-lsp"
+    "clojure-lsp",
+
+    -- "crystal"
+    "crystalline"
 
   },
 }

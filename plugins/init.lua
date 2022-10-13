@@ -8,6 +8,9 @@ return {
   -- TODO: Move overrides to overrides
   -- TODO: checkout neogit
 
+
+  ["vim-crystal/vim-crystal"] = {},
+
   ["wakatime/vim-wakatime"] = {},
 
   -- ["rktjmp/hotpot.nvim"] = {},
